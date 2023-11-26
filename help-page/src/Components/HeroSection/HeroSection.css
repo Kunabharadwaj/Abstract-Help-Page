@@ -1,0 +1,34 @@
+#main-HeroSection{
+    background-color: #DADBF1;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+@media (max-width : 720px) {
+    #main-HeroSection{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+#main-div-Hero{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 70px;
+    line-height: 1.5px;
+    letter-spacing: -4px;
+    text-align: center;
+}
+
+input{
+    color: black;
+    width: 720px;
+    align-self: center;
+    padding: 10px;
+}
