@@ -1,4 +1,4 @@
-#main-HeroSection{
+/* #main-HeroSection{
     background-color: #DADBF1;
     padding-left: 30px;
     padding-right: 30px;
@@ -31,4 +31,36 @@ input{
     width: 720px;
     align-self: center;
     padding: 10px;
+} */
+
+.main-HeroSection__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #DADBF1;
+    padding: 80px 30px;
+
+    @media (min-width : 1024px) {
+        padding-top: 80px;
+        padding-bottom: 120px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.main-HeroSection__input{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.main-HeroSection__input > input{
+    border: none;
+    width: 100%;
 }
