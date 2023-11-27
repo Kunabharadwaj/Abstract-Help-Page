@@ -3,8 +3,7 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    width: 100%;
-    margin-top: 50px;
+    margin: 50px;
 }
 
 .category-list__item {
@@ -22,7 +21,8 @@
 
     .category-list__item {
         min-height: 115px;
-        width: 30%;
+        width: 40%;
+        flex-grow: 1;
     }
 }
 
