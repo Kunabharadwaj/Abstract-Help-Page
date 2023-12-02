@@ -1,10 +1,25 @@
 import React from "react";
 import "../NavBar/NavBar.css";
-import { FaSearch, FaBars } from "react-icons/fa";
+import { FaSearch, FaBars, FaTimes } from "react-icons/fa";
 import NavButtons from "./NavButtons";
 import useWindowSize from "./hooks/useWindowSize";
+import { useState } from "react";
+
 const NavBar = () => {
   const size = useWindowSize();
+
+  const [Nav, setNav] = useState(false);
+  const links = [
+    {
+      id: 1,
+      link: "sign in",
+    },
+    {
+      id: 2,
+      link: "Register",
+    },
+  ];
+
   return (
     <section id="nav">
       <nav class="main-nav">
@@ -65,7 +80,31 @@ const NavBar = () => {
           <>
             <div class="main-nav__search-icon">
               <FaSearch class="main-nav__search-icon--icon" />
-              <FaBars class="main-nav__search-icon--icon" />
+              <div onClick={() => setNav(!Nav)}>
+                {Nav ? (
+                  <FaTimes class="main-nav__search-icon--icon" />
+                ) : (
+                  <FaBars class="main-nav__search-icon--icon" />
+                )}
+              </div>
+
+              {Nav && (
+                <ul class="mobile-nav__list">
+                  <FaTimes
+                    onClick={() => setNav(!Nav)}
+                    class="main-nav__mobile--close"
+                  />
+                  {links.map(({ id, link }) => (
+                    <li
+                      class="mobile-nav__list-items"
+                      style={{ color: "white" }}
+                      key={id}
+                    >
+                      {link}
+                    </li>
+                  ))}
+                </ul>
+              )}
             </div>
             <div class="main-nav__burger-cross" hidden></div>
           </>
