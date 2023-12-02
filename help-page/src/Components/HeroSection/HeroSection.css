@@ -1,45 +1,11 @@
-/* #main-HeroSection{
-    background-color: #DADBF1;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 80px;
-    padding-bottom: 80px;
-}
-@media (max-width : 720px) {
-    #main-HeroSection{
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-}
-
-#main-div-Hero{
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-}
-
-h1 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 70px;
-    line-height: 1.5px;
-    letter-spacing: -4px;
-    text-align: center;
-}
-
-input{
-    color: black;
-    width: 720px;
-    align-self: center;
-    padding: 10px;
-} */
-
-.main-HeroSection__container{
+.main-HeroSection__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #DADBF1;
     padding: 80px 30px;
+
 
     @media (min-width : 1024px) {
         padding-top: 80px;
@@ -49,18 +15,41 @@ input{
     }
 }
 
-.main-HeroSection__input{
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 80px;
+    line-height: 1.5px;
+    letter-spacing: -4px;
+    text-align: center;
+
+    @media (max-width : 1024px) {
+        font-size: 30px;
+        line-height: 1.5px;
+        letter-spacing: -2px;
+        text-align: center;
+    }
+}
+
+.main-HeroSection__input {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     background-color: white;
+    align-self: center;
+    width: 720px;
     padding: 10px;
     border: 1px solid black;
     border-radius: 5px;
+
+    @media (max-width : 1024px) {
+        width: 280px;
+        padding: 5px;
+        border-radius: 3px;
+    }
 }
 
-.main-HeroSection__input > input{
+.main-HeroSection__input>input {
     border: none;
     width: 100%;
 }
