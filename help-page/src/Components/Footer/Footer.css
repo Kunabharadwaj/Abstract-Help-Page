@@ -4,6 +4,7 @@
     background-color: black;
     height: 100%;
     width: 100%;
+    padding: 10px;
 }
 .accordian {
     color: white;
@@ -16,6 +17,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-left: 10px;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
 }
 
 
@@ -26,4 +30,9 @@
     width: 100%;
     margin: 10px;
     list-style: none;
+    gap:10px;
+}
+
+.accordian__icon{
+    padding-right: 10px;
 }
