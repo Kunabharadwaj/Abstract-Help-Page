@@ -1,0 +1,40 @@
+.category-list__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 50px;
+}
+
+.category-list__item {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    width: 100%;
+}
+
+@media only screen and (min-width: 1025px) {
+    .category-list__items {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .category-list__item {
+        min-height: 115px;
+        width: 40%;
+        flex-grow: 1;
+    }
+}
+
+.category-list-svg-icon {
+  max-height: 92px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+.category-list__desc {
+  margin-bottom: 20px;
+  font-size: 24px;
+  line-height: 32px;
+  font-family: "Roboto", sans-serif;
+}
