@@ -46,8 +46,8 @@ const Footer = () => {
     <>
 
       {size.width > 1024 && (
-        <div>
-          <h1>Desktop Footer</h1>
+        <div class="footer__desktop">
+          <h2>© Developed by Front End Nakamas</h2>
         </div>
       )}
 

@@ -36,3 +36,11 @@
 .accordian__icon{
     padding-right: 10px;
 }
+
+.footer__desktop{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
